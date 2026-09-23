@@ -20,8 +20,8 @@ binding = "MEDIA"
 bucket_name = "tuktakmovies-media"
 
 [vars]
-SITE_URL = "https://tuktakmovies.online"
-SITE_NAME = "TuktakMovies"
+SITE_URL = "https://tuktakmovie.redrs.workers.dev"
+SITE_NAME = "TuktakMovie"
 
 # Secrets (set via: wrangler secret put SECRET_NAME)
 # TMDB_API_KEY
@@ -31,11 +31,11 @@ SITE_NAME = "TuktakMovies"
 # YOUTUBE_API_KEY (optional)
 
 [env.production]
-name = "tuktakmovies-production"
-route = { pattern = "tuktakmovies.online/*", zone_name = "tuktakmovies.online" }
+name = "tuktakmovie-production"
+route = { pattern = "tuktakmovie.redrs.workers.dev/*", zone_name = "tuktakmovie.redrs.workers.dev" }
 
 [env.preview]
-name = "tuktakmovies-preview"
+name = "tuktakmovie-preview"
 
 [[rules]]
 type = "ESModule"
